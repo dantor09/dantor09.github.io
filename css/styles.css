@@ -1,0 +1,16 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+footer > p {
+    margin: 25px 0px 10px 0px;
+}
+.ionicon{
+    height: 90px;
+    width: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 10px 30px;
+}
