@@ -14,3 +14,22 @@ footer > p {
     font-size: 30px;
     margin: 10px 30px;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between the links */
+    align-items: center; /* Centers the links vertically */
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
