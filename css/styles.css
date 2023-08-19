@@ -10,14 +10,18 @@ footer > p {
 #resume > img{
     border: black 1px solid;
     margin: 0rem 0rem 1rem 0rem;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-left: 20%;
 }
 #resume > h2 {
     margin: 0rem 0rem 1rem 0rem;
-    display: block;
+    display: inline-block;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-size: 5rem;
 }
 .ionicon{
     height: 90px;
