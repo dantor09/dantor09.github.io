@@ -45,3 +45,17 @@ footer > p {
 .navbar a:hover {
     background-color: #555;
 }
+#footer {
+    padding-top: 0px;
+}
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40%;
+    margin-top: 0px;
+}
+
+#footer > div > h3{
+
+    margin-block-start: 0.5rem;
+}
