@@ -31,23 +31,31 @@ footer > p {
     margin: 10px 30px;
 }
 
-.navbar {
+nav {
     display: flex;
-    justify-content: space-around; /* Distributes space evenly between the links */
+    justify-content: center; /* end justify*/
     align-items: center; /* Centers the links vertically */
     background-color: #333;
     padding: 10px 0;
 }
 
-.navbar a {
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+nav a {
+    display: block;
     text-decoration: none;
     color: white;
     padding: 8px 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
+    font-size: 1.2rem;
 }
 
-.navbar a:hover {
-    background-color: #555;
+nav a:hover {
+    background-color: #7e7e7e;
+    /*Make into a circle*/
 }
 #footer {
     padding-top: 0px;
