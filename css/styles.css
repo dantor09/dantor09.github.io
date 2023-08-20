@@ -1,11 +1,22 @@
 footer {
-    background-color: #333;
+    background-color: #19212e;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 footer > p {
     margin: 25px 0px 10px 0px;
+}
+.introduction-container {
+    background-color: #19212e;
+
+}
+.introduction-container >h1{
+    margin: 0px;
+    padding: 0rem 0rem 1rem 0rem;
+}
+.introduction-container > h1, .introduction-container > h2 {
+    text-align: center;
 }
 #resume > img{
     border: black 1px solid;
@@ -35,7 +46,7 @@ nav {
     display: flex;
     justify-content: center; /* end justify*/
     align-items: center; /* Centers the links vertically */
-    background-color: #333;
+    background-color: #19212e;
     padding: 10px 0;
 }
 
