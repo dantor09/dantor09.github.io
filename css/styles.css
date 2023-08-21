@@ -1,12 +1,24 @@
-footer {
+nav {
+    display: flex;
+    justify-content: center; /* end justify*/
+    align-items: center; /* Centers the links vertically */
     background-color: #19212e;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    padding: 10px 0;
 }
-footer > p {
-    margin: 25px 0px 10px 0px;
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease; 
+    font-size: 1.2rem;
 }
+
+nav a:hover {
+    background-color: #7e7e7e;
+    /*Make into a circle*/
+}
+
 .introduction-container {
     background-color: #19212e;
     display: flex;
@@ -25,6 +37,7 @@ footer > p {
     text-align: center;
     color: white;
 }
+
 #resume {
     display: flex;
     justify-content: center;
@@ -41,6 +54,18 @@ footer > p {
     font-weight: bold;
 }
 
+footer {
+    background-color: #19212e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+footer > p {
+    margin: 25px 0px 10px 0px;
+}
+
+
+
 .ionicon{
     height: 90px;
     width: 90px;
@@ -49,35 +74,6 @@ footer > p {
     margin: 10px 30px;
 }
 
-nav {
-    display: flex;
-    justify-content: center; /* end justify*/
-    align-items: center; /* Centers the links vertically */
-    background-color: #19212e;
-    padding: 10px 0;
-}
-
-@media (max-width: 1000px) {
-    nav {
-        flex-direction: column;
-    }
-    #resume {
-        flex-flow: column nowrap;
-    }
-}
-nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease; 
-    font-size: 1.2rem;
-}
-
-nav a:hover {
-    background-color: #7e7e7e;
-    /*Make into a circle*/
-}
 #footer {
     padding-top: 0px;
 }
@@ -92,3 +88,13 @@ nav a:hover {
 
     margin-block-start: 0.5rem;
 }
+
+@media (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+    }
+    #resume {
+        flex-flow: column nowrap;
+    }
+}
+
