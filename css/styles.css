@@ -15,6 +15,7 @@ footer > p {
 }
 .introduction-container > * {
     display: block;
+    margin: 0;
 }
 .introduction-container >h1{
     margin: 0px;
