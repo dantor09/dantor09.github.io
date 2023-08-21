@@ -9,7 +9,12 @@ footer > p {
 }
 .introduction-container {
     background-color: #19212e;
+    display: flex;
+    justify-content:space-around;
 
+}
+.introduction-container > * {
+    display: block;
 }
 .introduction-container >h1{
     margin: 0px;
