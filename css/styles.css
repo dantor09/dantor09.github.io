@@ -25,22 +25,22 @@ footer > p {
     text-align: center;
     color: white;
 }
-#resume > img{
-    border: black 1px solid;
-    margin: 0rem 0rem 1rem 0rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 20%;
+#resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
-#resume > h2 {
-    margin: 0rem 0rem 1rem 0rem;
-    display: inline-block;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    font-size: 5rem;
+#resume > img {
+    border: 2px solid black;
+    margin-bottom: 7px;
 }
+
+#resume > p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .ionicon{
     height: 90px;
     width: 90px;
@@ -57,9 +57,12 @@ nav {
     padding: 10px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     nav {
         flex-direction: column;
+    }
+    #resume {
+        flex-flow: column nowrap;
     }
 }
 nav a {
