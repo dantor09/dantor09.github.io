@@ -55,6 +55,14 @@ nav a:hover {
     font-weight: bold;
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+.projects > .projects__title {
+    align-self: center;
+}
 footer {
     background-color: #19212e;
     color: #fff;
@@ -96,6 +104,10 @@ footer > p {
     }
     #resume {
         flex-flow: column nowrap;
+    }
+    .projects {
+        flex-flow: column nowrap;
+        align-items: center;
     }
 }
 
