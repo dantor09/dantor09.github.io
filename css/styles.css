@@ -129,7 +129,8 @@ footer > p {
     #resume {
         flex-flow: column nowrap;
     }
-    .projects {
+    
+    .projects_wrapper {
         flex-flow: column nowrap;
         align-items: center;
     }
