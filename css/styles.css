@@ -100,7 +100,32 @@ nav {
     display: inline-block;
 }
 
+/*My services section*/
 
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*mYTQe3aP6IxOVqFiy2C6qw.jpeg);
+    color: var(--clr-light);
+}
+
+.services {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.services > .service > * {
+    color: white;
+}
+.my-services .section__title--services {
+    display: flex;
+    color: var(--clr-accent);
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.my-services > a {
+    display: flex;
+    color: var(--clr-accent);
+    justify-content: center;
+}
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -128,6 +153,16 @@ nav {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+    
+    .services {
+        display: flex;
+        justify-content: center;
+    }
+    .service > *{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 nav {
     display: flex;
