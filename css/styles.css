@@ -104,7 +104,8 @@ nav {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*mYTQe3aP6IxOVqFiy2C6qw.jpeg);
+    /*background-image: url(https://www.glassdoor.com/employers/app/uploads/sites/2/2018/08/Code-3.jpg);
+    background-repeat: no-repeat;*/
     color: var(--clr-light);
 }
 
@@ -133,8 +134,8 @@ nav {
         margin: 0 auto;
         grid-column-gap: 2em;
         grid-template-areas:
-        "img title"
-        "img subtitle";
+        "img ."
+        "img .";
         grid-template-columns: min-content max-content;
     }
     .intro__img {
