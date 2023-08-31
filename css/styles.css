@@ -104,8 +104,11 @@ nav {
 
 .my-services {
     background-color: var(--clr-dark);
-    /*background-image: url(https://www.glassdoor.com/employers/app/uploads/sites/2/2018/08/Code-3.jpg);
-    background-repeat: no-repeat;*/
+    background-image: url(https://i.ytimg.com/vi/QXGnoFkjLBs/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+
     color: var(--clr-light);
 }
 
