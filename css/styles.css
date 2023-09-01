@@ -133,6 +133,15 @@ nav {
     color: var(--clr-accent);
     justify-content: center;
 }
+
+/*About me section */
+
+/*The about me section is a good way to center content in a page. The below code means to have about me section max out at 1000px in width and centering it with margin 0 auto; */
+.about-me {
+    max-width: 1000px;
+    /*The margin is 0 vertically, meaning the top and the bottom of the section has 0 margin, but the horizontal is auto. This means that the container or element will be centered horizontally within its parent container. This has no effect on the kind of display the elements exert*/
+    margin: 0 auto;
+}
 @media (min-width: 600px) {
     .intro {
         display: grid;
