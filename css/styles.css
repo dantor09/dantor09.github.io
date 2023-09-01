@@ -142,6 +142,38 @@ nav {
     /*The margin is 0 vertically, meaning the top and the bottom of the section has 0 margin, but the horizontal is auto. This means that the container or element will be centered horizontally within its parent container. This has no effect on the kind of display the elements exert*/
     margin: 0 auto;
 }
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+        grid-column-gap: 2em;
+    }
+
+    .about-me__img {
+        box-shadow: var(--bs);
+    }
+    .section__title--about {
+        grid-area: title;
+    } 
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+    .section__subtitle--about {
+        grid-column: 1;
+    }
+    .about-me__img {
+        /* Start at the top and end at the end of the rows automatically*/
+        grid-row: 1 / -1;
+        grid-column: 2;
+    }
+}
 @media (min-width: 600px) {
     .intro {
         display: grid;
