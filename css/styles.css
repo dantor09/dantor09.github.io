@@ -165,9 +165,6 @@ nav {
         grid-column: 1 / -1;
         grid-row: 2;
     }
-    .section__subtitle--about {
-        grid-column: 1;
-    }
     .about-me__img {
         /* Start at the top and end at the end of the rows automatically*/
         grid-row: 1 / -1;
