@@ -221,9 +221,11 @@ nav {
 nav {
     display: flex;
     justify-content: center; /* end justify*/
-    align-items: center; /* Centers the links vertically */
     background-color: #19212e;
     padding: 10px 0;
+}
+nav > ul {
+    list-style-type: none;
 }
 nav a {
     display: block;
@@ -237,30 +239,6 @@ nav a {
 nav a:hover {
     background-color: #7e7e7e;
     /*Make into a circle*/
-}
-
-.intro > img {
-    height: 310px;
-    width: 200px;
-}
-.introduction-container {
-    background-color: #19212e;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-
-}
-.introduction-container > * {
-    display: block;
-    margin: 0;
-}
-.introduction-container >h1{
-    margin: 0px;
-    padding: 0rem 0rem 1rem 0rem;
-}
-.introduction-container > h1, .introduction-container > h2 {
-    text-align: center;
-    color: white;
 }
 
 #resume {
@@ -360,3 +338,6 @@ footer > p {
     }
 }
 
+.my-work {
+    background-color:#19212e;
+}
