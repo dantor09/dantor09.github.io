@@ -154,7 +154,6 @@ nav {
         "text img";
         grid-column-gap: 2em;
     }
-
     .about-me__img {
         box-shadow: var(--bs);
     }
@@ -164,14 +163,24 @@ nav {
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
+        position: relative;
+        /* left: -1em is so that the green part is sticking out */
+        left: -1em;
+        width: calc(100% + 2em);
+        /*The padding on the left is so that the text lines up with the main text in our portfolio website*/
+        padding-left: 1em;
+        /*by having this padding on the right, this is going to ensure
+          that the text never goes behind the image and wraps when needed*/
+        padding-right: calc(200px + 4em) 
     }
     .about-me__img {
         /* Start at the top and end at the end of the rows automatically*/
         grid-row: 1 / -1;
         grid-column: 2;
+        position: relative;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
