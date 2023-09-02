@@ -256,22 +256,48 @@ nav a:hover {
     font-weight: bold;
 }
 
-.projects_wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-}
-.projects_wrapper > .projects__title {
-    align-self: center;
-}
-.projects__video {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers children horizontally */
-}
 .my-work > * {
     color: white;
 }
+.my-work {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color:#19212e;
+    gap: 10px;
+}
+.project {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    margin-top: 0px;
+}
+.project > .project__video {
+    margin: auto 0;
+}
+.project__intro {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /* Centers items vertically */
+
+    gap: 1em; /* Adjust this value for desired spacing between items */
+}
+.projects__video {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /* Centers items vertically */
+    align-items: center;
+    gap: 1em; /* Adjust this value for desired spacing between items */
+}
+
+@media (max-width: 750px) {
+
+    .project {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;;
+    }
+}
+
 #github-button {
     display: inline-block;
     padding: 10px 20px;
@@ -285,7 +311,18 @@ nav a:hover {
     margin-right: 19%;
     margin-bottom: 10px
 }
-
+#link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px
+}
 #github-button:hover {
     background-color: #555;
 }
@@ -333,12 +370,5 @@ footer > p {
     #resume > img {
         width: 80%;
     }
-    .projects_wrapper {
-        flex-flow: column nowrap;
-        align-items: center;
-    }
 }
 
-.my-work {
-    background-color:#19212e;
-}
