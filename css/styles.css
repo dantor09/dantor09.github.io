@@ -147,8 +147,23 @@ header {
     transform: translateX(0);
 }
 
+/*This will ensure that the hamburger stays within sight when clicking on the jumping links*/
 .nav-open .nav-toggle{
     position: fixed;
+}
+
+/*turn the hamburger .625turn*/
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+/*Rotate the burger before 90deg and translate -6px*/
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+/*Make the burger after, completely transparent making it invisible*/
+/*This series of transformations will make an X*/
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 .nav-toggle {
     padding: .5em;
