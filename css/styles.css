@@ -101,6 +101,49 @@ section {
     display: inline-block;
 }
 
+
+/*Navigation*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    left:0;
+    bottom: 0;
+    right:0;
+    z-index: 100;
+
+    transform: translateX(0%);
+    transition: transform 250ms cubic-bezier(.5,0,1);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
+}
+.nav__link:hover {
+    color: var(--clr-accent);
+}
+.logo {
+    max-width: 100px;
+}
+
 /*My services section*/
 
 .my-services {
