@@ -143,6 +143,13 @@ header {
 
 /* hamburger, this will be done the more complicated way to be able to make all the pieces more animatable*/
 
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
 .nav-toggle {
     padding: .5em;
     background: transparent;
