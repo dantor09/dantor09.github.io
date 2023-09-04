@@ -352,15 +352,36 @@ nav a:hover {
     align-items: center;
     gap: 10%;
 }
+.resume__title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 2em;
+}
 #resume > img {
     border: 2px solid black;
     margin-bottom: 7px;
 }
-
-#resume > p {
+.resume-button {
+    background-color: #333;
+    padding: 1em 1em;
+    color: white;
+    font-family: var(--ff-secondary);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+.resume-button:hover {
+    background-color: #555;
+}
+.resume__title  > p {
     font-size: x-large;
     font-weight: bold;
 }
+
 
 .my-work > * {
     color: black;
