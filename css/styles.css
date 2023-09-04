@@ -380,8 +380,9 @@ nav a:hover {
 .project-links {
     display: flex;
 }
-.project-links > * {
-    margin: 1em;
+
+.project-links > a {
+    margin: 2%;
 }
 .project > .project__video {
     margin: auto 0;
@@ -420,7 +421,6 @@ nav a:hover {
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    margin-right: 19%;
     margin-bottom: 10px
 }
 #link-button {
