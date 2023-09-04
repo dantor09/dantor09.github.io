@@ -443,7 +443,7 @@ nav a:hover {
     transition: background-color 0.3s ease;
     margin-bottom: 10px
 }
-#github-button:hover {
+#github-button:hover, #link-button:hover {
     background-color: #555;
 }
 
