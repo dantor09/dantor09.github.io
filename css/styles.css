@@ -363,13 +363,13 @@ nav a:hover {
 }
 
 .my-work > * {
-    color: white;
+    color: black;
 }
 .my-work {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color:#19212e;
+    background-color:#ffffff;
     gap: 10px;
 }
 .project {
@@ -415,7 +415,7 @@ nav a:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
