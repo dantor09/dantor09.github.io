@@ -321,7 +321,10 @@ header {
         display: flex;
         justify-content: center;
     }
-    
+    .form-control {
+        width: 10%;
+        border-bottom: solid black 1px;
+    }
 }
 nav {
     display: flex;
@@ -451,8 +454,14 @@ nav a:hover {
     background-color: #16e0bd;
     padding: 1em;
 }
+.contact-form__container {
+    width: 50%
+}
+form > * {
+    margin: 1em;
+}
 .form-control {
-    width: 100%;
+    width: 60%;
     border-bottom: solid black 1px;
 }
 input {
@@ -511,6 +520,9 @@ footer > p {
     }
     .contact-form__title {
         margin-bottom: 1em;
+    }
+    .form-control {
+        width: 100%;
     }
 }
 
