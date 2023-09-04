@@ -440,8 +440,8 @@ nav a:hover {
 }
 
 footer {
-    background-color: #19212e;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     text-align: center;
 }
@@ -452,7 +452,7 @@ footer > p {
 .ionicon{
     height: 90px;
     width: 90px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 30px;
     margin: 10px 30px;
 }
