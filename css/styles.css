@@ -374,8 +374,14 @@ nav a:hover {
 }
 .project {
     display: grid;
-    grid-template-columns: 300px 400px;
+    grid-template-columns: 300px minmax(500px,650px);
     margin-top: 0px;
+}
+.project-links {
+    display: flex;
+}
+.project-links > * {
+    margin: 1em;
 }
 .project > .project__video {
     margin: auto 0;
