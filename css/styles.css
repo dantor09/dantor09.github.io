@@ -454,11 +454,14 @@ nav a:hover {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: #16e0bd;
+    background-color: #333;
     padding: 1em;
 }
 .contact-form__container {
-    width: 50%
+    width: 50%;
+}
+.contact-form__title {
+    color: white;
 }
 form > * {
     margin: 1em;
@@ -472,8 +475,8 @@ input {
 }
 
 form .submit {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 footer {
     background-color: #ffffff;
