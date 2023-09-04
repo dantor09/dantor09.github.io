@@ -506,5 +506,11 @@ footer > p {
     #resume > img {
         width: 80%;
     }
+    .contact-form {
+        flex-flow: column nowrap;
+    }
+    .contact-form__title {
+        margin-bottom: 1em;
+    }
 }
 
