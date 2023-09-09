@@ -417,8 +417,7 @@ nav a:hover {
 }
 .project {
     display: grid;
-    grid-template-columns: 300px minmax(500px,650px);
-    margin-top: 0px;
+    grid-template-columns: 300px minmax(400px,650px);
 }
 .project-links {
     display: flex;
