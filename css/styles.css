@@ -378,6 +378,7 @@ nav a:hover {
     border: 2px solid black;
     margin-bottom: 7px; 
     width: 100%;
+    max-width: 575px;
 }
 .resume__button, .research-button {
     background-color: #333;
