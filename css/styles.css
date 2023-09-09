@@ -356,7 +356,8 @@ nav a:hover {
 .my-research  > p {
     font-size: var(--fs-body)
 }
-#resume {
+/*Resume section*/
+.my-resume {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,13 +367,19 @@ nav a:hover {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    font-size: x-large;
+    font-weight: bold;
 }
-#resume > img {
+.resume__text {
+    text-align: center;
+}
+.resume__image {
     border: 2px solid black;
-    margin-bottom: 7px;
+    margin-bottom: 7px; 
+    width: 100%;
 }
-.resume-button, .research-button {
+.resume__button, .research-button {
     background-color: #333;
     padding: 1em 1em;
     color: white;
@@ -384,14 +391,9 @@ nav a:hover {
     transition: background-color 0.3s;
     align-items: center;
 }
-.resume-button:hover {
+.resume__button:hover {
     background-color: #555;
 }
-.resume__title  > p {
-    font-size: x-large;
-    font-weight: bold;
-}
-
 
 .my-work > * {
     color: black;
@@ -546,11 +548,11 @@ footer > p {
     nav {
         flex-direction: column;
     }
-    #resume {
+    .my-resume {
         flex-flow: column nowrap;
     }
-    #resume > img {
-        width: 80%;
+    .resume__image {
+        width: 100%;
     }
     .contact-form {
         flex-flow: column nowrap;
