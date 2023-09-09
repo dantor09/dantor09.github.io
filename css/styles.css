@@ -319,13 +319,14 @@ header {
     
     .services {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        gap: 20px;
     }
-    .service > *{
+    .service > * {
         display: flex;
         justify-content: center;
     }
-    
+
 }
 nav {
     display: flex;
