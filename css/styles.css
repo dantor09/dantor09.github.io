@@ -353,12 +353,40 @@ nav a:hover {
     /*Make into a circle*/
 }
 
+.my-work > * {
+    color: black;
+}
+.my-work {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color:#ffffff;
+    gap: 10px;
+}
+
+/*My technologies*/
+.my-technologies__images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.my-technologies__images > img {
+    height: 150px;
+    width: 150px;
+}
+.my-research {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
 .my-research > .section__subtitle {
     margin-top: 10px;
 }
 .my-research  > p {
     font-size: var(--fs-body)
 }
+
 /*Resume section*/
 .my-resume {
     display: flex;
@@ -399,22 +427,7 @@ nav a:hover {
     background-color: #555;
 }
 
-.my-work > * {
-    color: black;
-}
-.my-work {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    background-color:#ffffff;
-    gap: 10px;
-}
-.my-research {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    margin: 0px auto;
-}
+
 .project {
     display: grid;
     grid-template-columns: 300px minmax(400px,650px);
