@@ -431,7 +431,7 @@ nav a:hover {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center; /* Centers items vertically */
-
+    align-items: center;
     gap: 1em; /* Adjust this value for desired spacing between items */
 }
 .projects__video {
