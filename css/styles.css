@@ -369,10 +369,31 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
+/*In order to contain the image inside of the given dimensions then 
+  we use object-fit: contain;*/
 .my-technologies__images > img {
     height: 150px;
     width: 150px;
+    object-fit: contain;
+}
+#java {
+    height: 110px;
+    width: 100px;
+}
+#css {
+    height: 110px;
+    width: 110px;
+    margin-right: 40px;
+}
+#htm {
+    height: 195px;
+    width: 195px;
+}
+#C {
+    height: 100px;
+    width: 100px;
 }
 .my-research {
     display: flex; 
