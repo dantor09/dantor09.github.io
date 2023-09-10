@@ -371,6 +371,9 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
 }
+.center {
+    text-align: center;
+}
 /*In order to contain the image inside of the given dimensions then 
   we use object-fit: contain;*/
 .my-technologies__images > img {
