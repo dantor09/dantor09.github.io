@@ -368,6 +368,8 @@ nav a:hover {
 .my-technologies__images {
     display: flex;
     flex-flow: row wrap;
+    max-width: 50%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -401,6 +403,36 @@ nav a:hover {
 #C {
     height: 100px;
     width: 100px;
+}
+
+/*Intern companies*/
+.intern-companies {
+    width: 50%;
+    margin: 0 auto;
+    /*background-color: orange;*/
+}
+
+.company {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    /*background-color: purple;*/
+    margin-top: 50px;
+}
+.company__text {
+    text-align: center;
+}
+.company__image {
+    height: 200px; 
+    width: 200px;
+    object-fit: contain;
+    margin: 0px auto;
+}
+.company__image > img {
+    margin-bottom: 10px;
+}
+.company__button {
+    margin-left: 20%;
 }
 .my-research {
     display: flex; 
@@ -439,7 +471,7 @@ nav a:hover {
     width: 100%;
     max-width: 575px;
 }
-.resume__button, .research-button {
+.resume__button, .research-button, .company__button {
     background-color: #333;
     padding: 1em 1em;
     color: white;
@@ -491,6 +523,11 @@ nav a:hover {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;;
+    }
+    .company {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 50px;
     }
 }
 
