@@ -368,7 +368,7 @@ nav a:hover {
 .my-technologies__images {
     display: flex;
     flex-flow: row wrap;
-    max-width: 50%;
+    max-width: 75%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -407,7 +407,7 @@ nav a:hover {
 
 /*Intern companies*/
 .intern-companies {
-    width: 50%;
+    max-width: 75%;
     margin: 0 auto;
     /*background-color: orange;*/
 }
@@ -441,6 +441,7 @@ nav a:hover {
     display: flex; 
     flex-direction: column;
     align-items: center;
+    max-width: 75%;
     margin: 0px auto;
 }
 .my-research > .section__subtitle {
