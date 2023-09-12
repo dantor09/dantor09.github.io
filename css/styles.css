@@ -423,13 +423,16 @@ nav a:hover {
     text-align: center;
 }
 .company__image {
-    height: 200px; 
-    width: 200px;
+    height: 275px; 
+    width: 275px;
     object-fit: contain;
     margin: 0px auto;
 }
 .company__image > img {
     margin-bottom: 10px;
+}
+.company:last-of-type img {
+    padding: 30px;
 }
 .company__button {
     margin-left: 20%;
