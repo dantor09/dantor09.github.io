@@ -409,20 +409,30 @@ nav a:hover {
 .intern-companies {
     max-width: 75%;
     margin: 0 auto;
-    /*background-color: orange;*/
 }
 
 .company {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 25px;
-    /*background-color: purple;*/
     margin-top: 50px;
+}
+.companies {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 1em;
+}
+.companies div:first-of-type {
+    margin-top: 1em;
 }
 .company__text {
     text-align: center;
 }
 .company__image {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     height: 275px; 
     width: 275px;
     object-fit: contain;
@@ -431,7 +441,7 @@ nav a:hover {
 .company__image > img {
     margin-bottom: 10px;
 }
-.company:last-of-type img {
+.kern img {
     padding: 30px;
 }
 .company__button {
@@ -533,6 +543,7 @@ nav a:hover {
         flex-flow: column nowrap;
         gap: 50px;
     }
+
 }
 
 #github-button {
