@@ -18,7 +18,7 @@
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h2-3: 1.75 ;
+    --fs-h2-3: 2rem ;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
@@ -30,7 +30,7 @@
     :root {
         --fs-h1: 5.5rem;
         --fs-h2: 3.75rem;
-        --fs-h2-3: 1.75 ;
+        --fs-h2-3: 2rem ;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
@@ -358,7 +358,9 @@ nav a:hover {
     background-color:#ffffff;
     gap: 10px;
 }
-
+.my-work .section__title {
+    font-size: var(--fs-h2-3);
+}
 /*My technologies*/
 .my-technologies__images {
     display: flex;
