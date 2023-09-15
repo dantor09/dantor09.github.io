@@ -484,7 +484,10 @@ nav a:hover {
     width: 100%;
     max-width: 575px;
 }
-.resume__button, .research-button, .company__button {
+.resume__button,
+.research-button,
+.company__button,
+.network-scanner-github__button {
     background-color: #333;
     padding: 1em 1em;
     color: white;
@@ -505,11 +508,11 @@ nav a:hover {
     display: grid;
     grid-template-columns: 300px minmax(400px,650px);
 }
-.project-links {
+.project-links, .links {
     display: flex;
 }
 
-.project-links > a {
+.project-links > a, .links > a {
     margin: 2%;
 }
 .project > .project__video {
@@ -563,20 +566,7 @@ nav a:hover {
     }
 }
 
-#github-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px
-}
-#link-button {
+#link-button, #github-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
