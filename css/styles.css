@@ -438,6 +438,7 @@ nav a:hover {
 }
 .company__image > img {
     margin-bottom: 10px;
+    box-shadow: var(--bs);    
 }
 .kern img {
     padding: 30px;
