@@ -293,6 +293,33 @@ header {
         grid-column: 2;
         position: relative;
     }
+    /*Introduction section*/
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 2em;
+        grid-template-areas:
+        "img ."
+        "img .";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img {
+        grid-area: img;
+        min-width: 230px;
+        position:relative;
+        z-index: 2;
+    }
+    .section__subtitle--intro {
+        align-self: start;
+        /*Stretch from one end to the other*/
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
 
 nav {
@@ -313,33 +340,7 @@ nav a:hover {
     background-color: #7e7e7e;
 }
 
-/*Introduction section*/
-.intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 2em;
-    grid-template-areas:
-    "img ."
-    "img .";
-    grid-template-columns: min-content max-content;
-}
-.intro__img {
-    grid-area: img;
-    min-width: 230px;
-    position:relative;
-    z-index: 2;
-}
-.section__subtitle--intro {
-    align-self: start;
-    /*Stretch from one end to the other*/
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-}
+
 
 .my-work > * {
     color: black;
