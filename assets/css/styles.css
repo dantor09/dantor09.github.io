@@ -380,25 +380,25 @@ nav a:hover {
     width: 150px;
     object-fit: contain;
 }
-#java {
+#java-image {
     height: 110px;
     width: 100px;
 }
-#powershell {
+#powershell-image {
     height: 225px;
     width: 225px;
 }
-#css {
+#css-image {
     height: 100px;
     width: 100px;
     margin-right: 10px;
 }
-#htm {
+#html-image {
     height: 100px;
     width: 100px;
     margin-right: 30px;
 }
-#C {
+#c-image {
     height: 100px;
     width: 100px;
 }
