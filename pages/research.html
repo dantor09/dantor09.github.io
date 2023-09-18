@@ -8,7 +8,8 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!--<link rel="stylesheet" href="../assets/css/styles.css" />-->
+    <link rel="stylesheet" href="../assets/css/research.css">
 </head>
 <body>
     <header>
@@ -26,16 +27,33 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="intro" id="home">
-        <!-- The double hyphen means that this is a modifier class, meaning it will modify the section title to be a bit different from the default section title-->
         <h1 class="section__title section__title--intro">
-            Machine Learning Research:<strong>Convolutional Neural Networks and Oil Saturation in Core Images</strong>
+            Machine learning research: <strong>Convolutional Neural Networks and oil saturation in core images.</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">Researchers: Daniel Torres, Salvador Vargas</p>
         <img class="intro__img" src="../assets/images/research/core.png" alt="Daniel Torres photo">
     </section> 
 
+    <section class="background">
+        <div class="explanation background__explanation">
+            <h2>What is core?</h2>
+            <p>Core is a piece of cylindrical rock that oil companies recover from the underground using special diamond tip fitted drills.</p>
+            <h2>How is it used?</h2>
+            <p>Core is used to determine the amount of oil in a reservoir and the quality of the rock.</p>
+        </div>
+        <img src="/assets/images/research/core_diagram.png" alt="Core rock">
+    </section>
+
+    <section class="question">
+        <div class="explanation question__explanation">
+            <h2>Can convolutional neural networks classify and predict oil saturation values based on a photo?</h2>
+            <p>According to our research, using a technique called transfer learning, CNN's are able to classify oil saturation values.</p>
+        </div>
+        
+
+    </section>
     <!-- Footer -->
     <footer> 
         <div class="info-container"> 
