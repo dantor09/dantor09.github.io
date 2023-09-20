@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    border: 1px solid orange;
+    border: 1px solid transparent;
 }
 
 /*Custom Properties*/
@@ -47,10 +47,6 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
-img {
-    display: block;
-    max-width: 100%;
-}
 strong {
     font-weight: var(--fw-bold);
     font-size: 1.5em;
@@ -72,7 +68,7 @@ p {
 }
 img {
     display: flex;
-    margin: 0 auto;
+    margin: 25px auto;
     width: 50%;
 }
 .intro {
