@@ -83,6 +83,9 @@ img {
 .section__title-intro {
     font-weight: var(--fw-reg);
 }
+.section__title > strong {
+    display: block;
+}
 
 section {
     padding: 3em 2em;
