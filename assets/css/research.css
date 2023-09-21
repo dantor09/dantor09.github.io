@@ -90,6 +90,7 @@ section {
 
 .intro__img {
     box-shadow: var(--bs);
+    width: 20%;
 }
 
 footer {
