@@ -406,8 +406,9 @@ nav a:hover {
 .company {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 25px;
-    margin-top: 50px;
+    width: 75%;
+    margin: 0px auto;
+
 }
 .companies {
     display: flex;
@@ -454,7 +455,7 @@ nav a:hover {
     font-size: var(--fs-body)
 }
 
-/*Resume section*/
+/*section*/
 .my-resume {
     display: flex;
     justify-content: center;
