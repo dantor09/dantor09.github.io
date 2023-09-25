@@ -356,6 +356,13 @@ nav a:hover {
     font-size: var(--fs-h2-3);
 }
 /*My technologies*/
+.green-background{
+    background-color: #16e0bd;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 10px;;
+}
 .my-technologies__images {
     display: flex;
     flex-flow: row wrap;
@@ -522,6 +529,7 @@ nav a:hover {
     justify-content: center; /* Centers items vertically */
     align-items: center;
     gap: 1em; /* Adjust this value for desired spacing between items */
+    text-align: center;
 }
 .projects__video {
     display: flex;
