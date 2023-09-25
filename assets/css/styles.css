@@ -406,7 +406,6 @@ nav a:hover {
 .company {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    width: 75%;
     margin: 0px auto;
 
 }
@@ -641,12 +640,13 @@ footer > p {
     .project {
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;;
+        align-items: center;
     }
     .company {
         display: flex;
         flex-flow: column nowrap;
-        gap: 50px;
+        align-items: center;
+        gap: 20px;
     }
     .services {
         display: flex;
@@ -654,7 +654,7 @@ footer > p {
         justify-content: space-evenly;
         gap: 20px;
         max-width: 75%;
-        margin: 0 auto;
+        margin: 0;
     }
     .services .service {
         max-width: 100%;
@@ -668,7 +668,7 @@ footer > p {
         justify-content: center;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .contact-form {
         flex-direction: column;
         align-items: center;
