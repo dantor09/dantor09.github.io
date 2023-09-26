@@ -116,6 +116,10 @@ header {
     justify-content: space-between;
     padding: 1em;
 }
+header > p {
+    margin-right: 30%;
+    margin-top: 6px;
+}
 .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -181,9 +185,8 @@ header {
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 1.8em;
     z-index: 1000;
-
 }
 .hamburger {
     display: block;
@@ -208,10 +211,6 @@ header {
 }
 .hamburger::before {top: 6px;}
 .hamburger::after {bottom: 6px;}
-
-.logo {
-    max-width: 100px;
-}
 
 /*My services section*/
 
@@ -343,7 +342,6 @@ nav a {
 nav a:hover {
     background-color: #7e7e7e;
 }
-
 
 
 .my-work > * {
@@ -512,7 +510,6 @@ nav a:hover {
     background-color: #555;
 }
 
-
 .project {
     display: grid;
     grid-template-columns: 300px minmax(400px,650px);
@@ -542,8 +539,6 @@ nav a:hover {
     align-items: center;
     gap: 1em; /* Adjust this value for desired spacing between items */
 }
-
-
 
 #link-button, #github-button {
     display: inline-block;
@@ -597,15 +592,6 @@ form .submit {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
-}
-footer > p {
-    margin: 25px 0px 10px 0px;
-}
 
 .ionicon{
     height: 90px;
@@ -613,21 +599,6 @@ footer > p {
     color: rgb(0, 0, 0);
     font-size: 30px;
     margin: 10px 30px;
-}
-
-#footer {
-    padding-top: 0px;
-}
-.info-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40%;
-    margin-top: 0px;
-}
-
-#footer > div > h3{
-
-    margin-block-start: 0.5rem;
 }
 
 @media (max-width: 1000px) {
