@@ -71,6 +71,27 @@ img {
     margin: 25px auto;
     width: 50%;
 }
+li {
+    list-style: none;
+}
+header {
+    background-color: rgb(83, 185, 149);
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    align-items: center;
+    padding: 10px;
+}
+.nav-menu > li > a {
+    color: black;
+    padding: 10px;
+    font-size: 1.6em;
+}
 .intro {
     text-align: center;
     width: 75%;
