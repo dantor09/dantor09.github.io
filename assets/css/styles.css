@@ -666,3 +666,24 @@ form .submit {
         margin: 1em auto;
     }
 }
+
+
+.stack_used {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(59, 59, 59) 0%, rgba(0, 0, 0, 0.8) 100%); /* Background gradient */
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); 
+    margin: 15px 0; /* Some space above and below the container */
+}
+
+.stack_used h3 {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600; 
+    letter-spacing: 2px; 
+}
