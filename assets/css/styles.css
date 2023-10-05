@@ -378,7 +378,6 @@ nav a:hover {
     margin: 0 auto;
     margin-top: 2em;
     padding-left: 3em;
-
 }
 .center {
     text-align: center;
@@ -623,6 +622,9 @@ form .submit {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+    }
+    .my-technologies__images {
+        padding-left: unset;
     }
     .company {
         display: flex;
