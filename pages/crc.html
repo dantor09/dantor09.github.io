@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Website</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--<link rel="stylesheet" href="../assets/css/styles.css" />-->
+    <link rel="stylesheet" href="../assets/css/crc.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <li><a href="../index.html"><b>Home</b></a></li>
+
+            <div class="social-media-card">
+                <a href="https://github.com/dantor09"><i class="ionicon ion-logo-github"></i></a>
+                <a href="https://twitter.com/dtorres_39/"><i class="ionicon ion-logo-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/dtorres09/"><i class="ionicon ion-logo-linkedin"></i></a>
+            </div>  
+            <div class="contact-card" id="contact">
+                <p>(661) - 910 - 1063 | <a href="mailto:D_Torres39@outlook.com" class="footer__link">D_Torres39@outlook.com</a></p>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            California Resources Corporation: <strong>Data Automation</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">May 2022 - November 2022
+        </p>
+        <img class="intro__img" src="/assets/images/crc/automation.png" alt="Internet of things icon">
+    </section> 
+
+    <section class="background">
+        <div class="explanation background__explanation">
+            <h2>What is core?</h2>
+            <p>Core is a piece of cylindrical rock that oil companies recover from the underground using special diamond tip fitted drills.</p>
+            <h2>How is it used?</h2>
+            <p>Core is used to determine the amount of oil in a reservoir and the quality of the rock.</p>
+        </div>
+        <img src="/assets/images/research/core_diagram.png" alt="Core rock">
+    </section>
+
+    <section class="question">
+        <div class="explanation question__explanation">
+            <h2>Can convolutional neural networks classify and predict oil saturation values based on a photo?</h2>
+            <p>According to our research, using a technique called transfer learning, CNN's are able to classify oil saturation values.</p>
+
+            <h3>Training</h3>
+            <p>To train, we obtained core images under ultra-violet light and the associated data associated with the 1 foot intervals on the image. To label, we used a python script to automatically label 167 x 167 sized images with the corresponding oil saturation. These images were used to train the neural networks.</p>
+        </div>
+        <img src="/assets/images/research/training.png" alt="training technique">
+    </section>
+    <section class="results">
+        <div class="explanation results__explanation">
+            <h2>Results</h2>
+            <p>The results below show testing accuracy as a function of an epoch and conclude that the neural networks hover around 86% accuracy.</p>
+        </div>
+        <img src="/assets/images/research/testing_accuracy_UV_regression.png" alt="training technique">
+    </section>
+</body>
+</html>
