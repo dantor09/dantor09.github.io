@@ -36,15 +36,18 @@
         </p>
         <img class="intro__img" src="/assets/images/crc/automation.png" alt="Internet of things icon">
     </section> 
-
+<main>
     <section class="background">
         <div class="explanation background__explanation">
-            <h2>What is core?</h2>
-            <p>Core is a piece of cylindrical rock that oil companies recover from the underground using special diamond tip fitted drills.</p>
-            <h2>How is it used?</h2>
-            <p>Core is used to determine the amount of oil in a reservoir and the quality of the rock.</p>
+            <h2>Project objective</h2>
+            <p>At California Resources Corporation, one of the largest oil producers in California, the primary goal was to enhance the efficient and real-time transfer of telemetry data sourced from an array of sensors attached to vital oil field equipment, including storage tanks and control valves. These sensors recorded crucial metrics including temperature, pressure, fluid level and an array of time series data, offering comprehensive insights intot the operational health and status of the equipment.</p>
+            <h2>Overall architecture</h2>
+            <p>To facilitate this data transfer, the organization employed a sophisticated SCADA (Supervisory Control and Data Acquisition) system interfaced with OPC Data Access (OPC DA) protocol. This setup acted as a conduit, channeling all the telemetry data seamlessly into a centralized OPC DA server.</p>
         </div>
-        <img src="/assets/images/research/core_diagram.png" alt="Core rock">
+        <figure>
+            <img src="/assets/images/crc/opcda.png" alt="OPCDA protocol diagram">
+            <figcaption>OPCDA protocol</figcaption>
+        </figure>        
     </section>
 
     <section class="question">
@@ -64,5 +67,6 @@
         </div>
         <img src="/assets/images/research/testing_accuracy_UV_regression.png" alt="training technique">
     </section>
+</main>
 </body>
 </html>
