@@ -75,6 +75,9 @@ img {
     margin: 25px auto;
     width: 50%;
 }
+#flowchart {
+    width: 100%;
+}
 figcaption {
     text-align: center;
     font-size: 2em;
