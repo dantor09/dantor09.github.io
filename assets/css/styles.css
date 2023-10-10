@@ -411,8 +411,7 @@ nav a:hover {
 .company {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 0px auto;
-
+    margin: 1.5em auto;
 }
 .companies {
     display: flex;
