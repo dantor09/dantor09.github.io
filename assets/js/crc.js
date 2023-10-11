@@ -1,22 +1,27 @@
 /* make image bigger on hover*/
 
-var imageHandle = document.getElementById('flowchart');
+var flowchartButton = document.getElementsByClassName('flowchart_button')[0];
+var flowchartImage = document.getElementById('flowchart');
 
-imageHandle.addEventListener('mouseover', function() {
-    imageHandle.style.width = "175%";
-    imageHandle.style.height = "175%";
-    imageHandle.style.transform = "translate(-50%, -50%)";
-    imageHandle.style.position = "relative";
-    imageHandle.style.left = "50%";
-    imageHandle.style.top = "300px";
-    imageHandle.style.margin = "0 auto"; 
-});
-
-imageHandle.addEventListener('mouseout', function() {
-    imageHandle.style.width = "100%";
-    imageHandle.style.height = "100%";
-    imageHandle.style.transform = "none";
-    imageHandle.style.position = "static";
-    imageHandle.style.left = "0";
-    imageHandle.style.top = "0";
+flowchartButton.addEventListener('click', function() {
+    
+    if(flowchartButton.textContent == "Make smaller") {
+        flowchartButton.textContent = "Make bigger";
+        flowchartImage.style.position = "static";
+        flowchartImage.style.width = "100%";
+        flowchartImage.style.height = "100%";
+        flowchartImage.style.left= "0";
+        flowchartImage.style.top = "0";
+        flowchartImage.style.transform = "translate(0, 0)";        
+        flowchartImage.style.margin = "0 auto"; 
+    } else if(flowchartButton.textContent == "Make bigger") {
+        flowchartButton.textContent = "Make smaller";  
+        flowchartImage.style.width = "175%";
+        flowchartImage.style.height = "175%";
+        flowchartImage.style.transform = "translate(-50%, -50%)";
+        flowchartImage.style.position = "relative";
+        flowchartImage.style.left = "50%";
+        flowchartImage.style.top = "300px";
+        flowchartImage.style.margin = "0 auto"; 
+    }
 });
