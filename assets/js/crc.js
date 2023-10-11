@@ -16,8 +16,8 @@ flowchartButton.addEventListener('click', function() {
         flowchartImage.style.margin = "0 auto"; 
     } else if(flowchartButton.textContent == "Make bigger") {
         flowchartButton.textContent = "Make smaller";  
-        flowchartImage.style.width = "175%";
-        flowchartImage.style.height = "175%";
+        flowchartImage.style.width = "150%";
+        flowchartImage.style.height = "150%";
         flowchartImage.style.transform = "translate(-50%, -50%)";
         flowchartImage.style.position = "relative";
         flowchartImage.style.left = "50%";
