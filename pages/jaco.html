@@ -53,42 +53,35 @@
         </div>
     </section> 
 <main>
-    <section class="background">
-        <div class="explanation background__explanation">
-            <h2>Project objective</h2>
+    <section>
+        <div>
+            <h2>Project 1 objective</h2>
             <p>Jaco Oil has business in various markets. The market I was involved in was their vast network of gas convenience stores, Fastrip. The mission was to modernize and streamline our extensive network infrastructure. Prior to this upgrade, the backbone of the infrastructure was mostly legacy equipment and called for an overhaul.</p>
 
             <p>During this upgrade, I successfully configured 20 servers, each equipped with type 1 virtual machines (Bare metal virtual machines). These VM's ran Pfsense and Ubuntu software, ensuring great security insights into the network and an environment to process transactions. Additionally, I configured fortinet switches and Wifi access points to facilitate and segment various network devices.</p>
 
             <p>My role demanded a solid understanding of computer networking as security and proper communication is of prime importance. Before implementation, the server and devices were validated and tested in a lab environment. This validation step ensured our point of sale system was able to gather transaction data, access our local area network and external wide area network. This approach ensures that Jaco Oil remains up to date in current technologies and facilitates trouble shooting.</p>
-
-            <h2>Overall architecture</h2>
-            <p>To facilitate this data transfer, the organization employed a sophisticated SCADA (Supervisory Control and Data Acquisition) system interfaced with OPC Data Access (OPC DA) protocol. This setup acted as a conduit, channeling all the telemetry data seamlessly into a centralized OPC DA server.</p>
-        </div>
-        <figure>
-            <img src="/assets/images/crc/opcda.png" alt="OPCDA protocol diagram">
-            <figcaption>OPCDA protocol</figcaption>
-        </figure>        
+        </div>      
     </section>
 
-    <section class="question">
-        <div class="explanation question__explanation">
-            <h2>Powershell/SQL solution</h2>
-            <p>Leveraging the versatility of PowerShell, I developed a robust script tailored to establish a remote connection to the OPCDA server. The script retrieved the csv data from the remote server. After retrievel, I implemented a data validation mechanism to sanitize and structure the data. Then, a secure database connection was instantiated, allowing for the integration of the telemetry data into our existing database infrastructure. This ensured our database tables were consistently updated with the latest telemetry insights, enhancing data accuracy and operational efficiency.</p>
+    <section>
+        <div>
+            <h2>Project 2 objective</h2>
+            <p>Fastrip employees are encouraged to submit their own gas prices to keep a historical record of Fastrip prices. Employees submit through a portal but this is often missed in the midst of work.</p>
 
-            <h3>Documentation</h3>
-            <p>After the script was made, documentation was a huge component of this project. Using flowchart conventions, this piece of documentation outlines the various paths the software can take. Most imporantly, it outlines what path the software should take on a successful run. Logging mechanism is also apparent in the documentation below.</p>
+            <p>Any Fastrip employee can submit their own prices from Fastrip and a feature request was made to ensure that Fastrip prices are submitted on time in order to keep a clean record of our prices. I was tasked with ensuring that when our prices are submitted, an email outlining the prices submitted was sent to the site. This would ensure that managers are on top and can confirm when prices are submitted.</p>
         </div>
-        <img id="flowchart" src="/assets/images/data_automation_flow_chart.pdf" alt="training technique">
+        <img id="flowchart" src="/assets/images/jaco/project_2_workflow.png" alt="Project 2 flow diagram">
         <button class="flowchart_button">Make bigger</button>
+        <p> The flow chart above depicts the various stages of the project and includes a legend. The names of tables and databases have been obfuscated.This project was successful and ensures gas prices are collected and with certainty, notify managers of this.</p>
     </section>
-    <section class="results">
-        <div class="explanation results__explanation">
-            <h2>Result</h2>
-            <p>During this internship I learned a great deal of software development. I gathered requirements from my boss. Designed a high level solution, implemented, tested and maintained the software. This was a great experience and was the first time that I developed a piece of software for a company.This piece of software is still running, validating and transferring millions+ of telemetry points to various databases.</p>
+    <section>
+        <div>
+            <h2>Conclusions</h2>
+            <p>During this internship I learned a great deal about virtual machines on the ProxMox platform. I learned about database systems in a production environment and the main takeaway was networks. Networks can be a challenging topic to grasp because many of the concepts, like in computer science, are abstract in the sense that you are not able to see the flow of data with your eyes, but rather on a screen and you have to trust that the protocols work as intended.</p>
         </div>
     </section>
 </main>
-<script src="../assets/js/crc.js"></script>
+<script src="../assets/js/jaco.js"></script>
 </body>
 </html>
