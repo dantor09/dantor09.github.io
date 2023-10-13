@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Website</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/jaco.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <li><a href="../index.html"><b>Home</b></a></li>
+
+            <div class="social-media-card">
+                <a href="https://github.com/dantor09"><i class="ionicon ion-logo-github"></i></a>
+                <a href="https://twitter.com/dtorres_39/"><i class="ionicon ion-logo-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/dtorres09/"><i class="ionicon ion-logo-linkedin"></i></a>
+            </div>  
+            <div class="contact-card" id="contact">
+                <p>(661) - 910 - 1063 | <a href="mailto:D_Torres39@outlook.com" class="footer__link">D_Torres39@outlook.com</a></p>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Jaco Oil Company<strong>IT Specialist</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">August 2023 - Present
+        </p>
+        <div class="project_summary_container">
+            <div>
+                <img src="../assets/images/jaco/it.png" alt="IT image">
+                <h3>IT</h3>
+            </div>
+            <div>
+                <img src="../assets/images/jaco/virtual_machines.png" alt="virtual machine image">
+                <h3>Virtual Machines</h3>
+            </div>
+            <div>
+                <img src="../assets/images/jaco/database.png" alt="database image">
+                <h3>Database Systems</h3>
+            </div>
+            <div>
+                <img src="../assets/images/jaco/computer_networks.png" alt="networks image">
+                <h3>Computer Networks</h3>
+            </div>   
+        </div>
+    </section> 
+<main>
+    <section class="background">
+        <div class="explanation background__explanation">
+            <h2>Project objective</h2>
+            <p>At California Resources Corporation, one of the largest oil producers in California, the primary goal was to enhance the efficient and real-time transfer of telemetry data sourced from an array of sensors attached to vital oil field equipment, including storage tanks and control valves. These sensors recorded crucial metrics including temperature, pressure, fluid level and an array of time series data, offering comprehensive insights intot the operational health and status of the equipment.</p>
+            <h2>Overall architecture</h2>
+            <p>To facilitate this data transfer, the organization employed a sophisticated SCADA (Supervisory Control and Data Acquisition) system interfaced with OPC Data Access (OPC DA) protocol. This setup acted as a conduit, channeling all the telemetry data seamlessly into a centralized OPC DA server.</p>
+        </div>
+        <figure>
+            <img src="/assets/images/crc/opcda.png" alt="OPCDA protocol diagram">
+            <figcaption>OPCDA protocol</figcaption>
+        </figure>        
+    </section>
+
+    <section class="question">
+        <div class="explanation question__explanation">
+            <h2>Powershell/SQL solution</h2>
+            <p>Leveraging the versatility of PowerShell, I developed a robust script tailored to establish a remote connection to the OPCDA server. The script retrieved the csv data from the remote server. After retrievel, I implemented a data validation mechanism to sanitize and structure the data. Then, a secure database connection was instantiated, allowing for the integration of the telemetry data into our existing database infrastructure. This ensured our database tables were consistently updated with the latest telemetry insights, enhancing data accuracy and operational efficiency.</p>
+
+            <h3>Documentation</h3>
+            <p>After the script was made, documentation was a huge component of this project. Using flowchart conventions, this piece of documentation outlines the various paths the software can take. Most imporantly, it outlines what path the software should take on a successful run. Logging mechanism is also apparent in the documentation below.</p>
+        </div>
+        <img id="flowchart" src="/assets/images/data_automation_flow_chart.pdf" alt="training technique">
+        <button class="flowchart_button">Make bigger</button>
+    </section>
+    <section class="results">
+        <div class="explanation results__explanation">
+            <h2>Result</h2>
+            <p>During this internship I learned a great deal of software development. I gathered requirements from my boss. Designed a high level solution, implemented, tested and maintained the software. This was a great experience and was the first time that I developed a piece of software for a company.This piece of software is still running, validating and transferring millions+ of telemetry points to various databases.</p>
+        </div>
+    </section>
+</main>
+<script src="../assets/js/crc.js"></script>
+</body>
+</html>
