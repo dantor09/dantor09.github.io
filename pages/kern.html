@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Website</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/kern.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <li><a href="../index.html"><b>Home</b></a></li>
+
+            <div class="social-media-card">
+                <a href="https://github.com/dantor09"><i class="ionicon ion-logo-github"></i></a>
+                <a href="https://twitter.com/dtorres_39/"><i class="ionicon ion-logo-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/dtorres09/"><i class="ionicon ion-logo-linkedin"></i></a>
+            </div>  
+            <div class="contact-card" id="contact">
+                <p>(661) - 910 - 1063 | <a href="mailto:D_Torres39@outlook.com" class="footer__link">D_Torres39@outlook.com</a></p>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Kern Health Systems: <strong>Cybersecurity</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">June 2023 - August 2023
+        </p>
+        <div class="project_summary_container">
+            <div>
+                <img src="../assets/images/kern/network_security.png" alt="Network security image">
+                <h3>Network Security</h3>
+            </div>
+            <div>
+                <img src="../assets/images/crc/database.png" alt="Database systems image">
+                <h3>Database Systems</h3>
+            </div>
+            <div>
+                <img src="../assets/images/kern/devops.png" alt="Devops image">
+                <h3>Developer Operations</h3>
+            </div>   
+        </div>
+    </section> 
+<main>
+    <section class="background">
+        <div class="explanation background__explanation">
+            <h2>Networks</h2>
+            <p>At Kern Health Systems, a health manager company, I was introduced for the first time to an industry grade network topology. The focus of the internship revolved around understanding networks and security within networks. The project I worked on involved constructing a network scanner from scratch without using libraries that handled IPV4 addresses. The point was to learn networks and learn about network security.</p>
+            <h2>Network Scanner</h2>
+            <p>In today's modern landscape, there are well tested tools like nmap, also known as a network mapper. This linux tool has various capabilities like scanning a network and determining which ports are open on a specific computer. Bad actors use this tool and can determine how vulnerable a specific network is by scanning and looking at what computers and services are open. The more responses from computers and the various services, the more vulnerable a computer network is.</p>
+        </div>
+        <figure>
+            <img src="/assets/images/kern/scanner_diagram.gif" alt="Network scanner diagram">
+            <figcaption>Network scanner diagram</figcaption>
+        </figure>        
+    </section>
+
+    <section class="question">
+        <div class="explanation question__explanation">
+            <h2>Python Implementation</h2>
+            <p>Python was chosen to create a network scanner from scratch.</p>
+
+            <h3>Documentation</h3>
+            <p>After the script was made, documentation was a huge component of this project. Using flowchart conventions, this piece of documentation outlines the various paths the software can take. Most imporantly, it outlines what path the software should take on a successful run. Logging mechanism is also apparent in the documentation below.</p>
+        </div>
+        <img id="flowchart" src="/assets/images/data_automation_flow_chart.pdf" alt="training technique">
+        <button class="flowchart_button">Make bigger</button>
+    </section>
+    <section class="results">
+        <div class="explanation results__explanation">
+            <h2>Result</h2>
+            <p>During this internship I learned a great deal of software development. I gathered requirements from my boss. Designed a high level solution, implemented, tested and maintained the software. This was a great experience and was the first time that I developed a piece of software for a company.This piece of software is still running, validating and transferring millions+ of telemetry points to various databases.</p>
+        </div>
+    </section>
+</main>
+<script src="../assets/js/crc.js"></script>
+</body>
+</html>
