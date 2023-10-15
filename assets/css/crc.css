@@ -75,6 +75,16 @@ img {
     margin: 25px auto;
     width: 50%;
 }
+.project_summary_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 85%;
+}
+.project_summary_container > div > img {
+    width: 40%;
+}
 button {
     border: none;
     border-radius: 5px;
