@@ -68,94 +68,74 @@
             <p>Python was chosen to create a network scanner from scratch. The script included a connection to an oracle database. An environment reader using the 'dotenv' library in order to read credentials from a .env file. A series of functions that are used to manipulate IP addresses and the socket library was used to test TCP connections on specific IP addresses on the network.</p>
 
             <h3>Documentation</h3>
-            <p>
-                __init__(self, ipAddress, fileName="default.csv", databaseConnection=None): 
-                <br>
-                <br>
-                This is the constructor of the Network class. It sets the instance variables of the class and parses the given IP address. The IP address is parsed to more member variables and an array 
-                (ipOctets) in which each index is an octet and it includes the CIDR value at the end of the 
-                list.
-                <br><br>
-                e.g 196.168.1.130/24
-                <br><br>
-                ipOctets[196, 168, 1, 130, 24]
-                <br><br>
-                __parse_ip(self, ipAddress):
-                <br>
-                This private method is used to parse the given IP address into octets and store them separately for later use. This includes the members like ipOctets list, ip and CIDR.<br><br>
-                get_ip_address(self):
-                <br>
-                Returns the IP address of the ip address associated with the Network class.
-                <br><br>
-                get_octet_index(self): 
-                <br>
-                Calculates and returns the index of the target octet based on the CIDR value.
-                <br><br>
-                __get_network_size(self): 
-                <br>
-                Private method to determine the size of the network (in terms of number of hosts) based on the CIDR value.
-                <br>
-                <br>
-                __get_subnetwork_ip(self): 
-                <br>
-                Private method that calculates the network address (first IP address in the subnet) of the current IP address.
-                <br><br>
-                get_network(self): 
-                <br>
-                Returns the network address of the subnet to which the current IP address belongs.
-                <br><br>
-                get_broadcast_ip(self): 
-                <br>
-                Returns the broadcast address of the subnet to which the current IP address belongs.
-                <br><br>
-                decode_ip(ipInteger): 
-                <br>
-                Static method that converts an IP address in integer format to the standard dotted format. <br><br>
-                get_ip_range(self): 
-                <br>
-                Returns the range of possible IP addresses within the network of the current IP address.
-                <br><br>
-                is_valid_ip(ipAddress): 
-                <br>
-                Static method that validates a given IP address and returns True if it's valid, False otherwise.
-                <br><br>
-                test_tcp(self, ip): 
-                <br>
-                Tests TCP connections on several ports for the given IP address and writes the result to a CSV file.
-                <br><br>
-                ping_ip(self, ip): 
-                <br>
-                Pings the given IP address and attempts the tcp connections in the tcp list in Network class. Results are recorded in csv file.
-                <br><br>
-                ping_network(self): 
-                <br>
-                Pings all the IP addresses within the network of the current IP address.
-                <br><br>
-                scan_port(self, ip, port):
-                <br>
-                This function will test a connection to a target ip. Currently only configured for tcp connections.
-                This will return a status 0 if successful. 
-                
-                <br><br>
-                write_to_database(self): 
-                <br>
-                Writes the contents of the ping and tcp attemps to a database.
-                <br><br>
-                Example use:
-                <br>
-                Create a database connection object. This will be the database that the contents of the csv file will write to when pinging and testing tcp connections. 
-                database1 = DatabaseConnection(username, password, host, database)
-                <br><br>
-                Create a Network object. This accepts a ip with cidr and the second parameter is the name of the csv file you want to write to (it does not need to exist).
-                The third parameter is the DatabaseConnection object you made previously.
-                <br>
-                network1 = Network("196.168.1.1/24", "example.csv", database1)
-                <br><br>
-                This will ping the given ip address and automatically write the results to the csv file<br>
-                network1.ping_ip(ipAddress)
-                <br><br>
-                This will go ahead and write the contents of the csv file to the database. 
-                <br>network1.write_to_database()</p>
+            <p><code>__init__(self, ipAddress, fileName="default.csv", databaseConnection=None):</code></p>
+<p>This is the constructor of the Network class. It sets the instance variables of the class and parses the given IP address. The IP address is parsed to more member variables and an array (ipOctets) in which each index is an octet and it includes the CIDR value at the end of the list.</p>
+
+<p>e.g <code>196.168.1.130/24</code></p>
+
+<p><code>ipOctets[196, 168, 1, 130, 24]</code></p>
+
+<p><code>__parse_ip(self, ipAddress):</code></p>
+<p>This private method is used to parse the given IP address into octets and store them separately for later use. This includes the members like ipOctets list, ip, and CIDR.</p>
+
+<p><code>get_ip_address(self):</code></p>
+<p>Returns the IP address of the IP address associated with the Network class.</p>
+
+<p><code>get_octet_index(self):</code></p>
+<p>Calculates and returns the index of the target octet based on the CIDR value.</p>
+
+<p><code>__get_network_size(self):</code></p>
+<p>Private method to determine the size of the network (in terms of number of hosts) based on the CIDR value.</p>
+
+<p><code>__get_subnetwork_ip(self):</code></p>
+<p>Private method that calculates the network address (first IP address in the subnet) of the current IP address.</p>
+
+<p><code>get_network(self):</code></p>
+<p>Returns the network address of the subnet to which the current IP address belongs.</p>
+
+<p><code>get_broadcast_ip(self):</code></p>
+<p>Returns the broadcast address of the subnet to which the current IP address belongs.</p>
+
+<p><code>decode_ip(ipInteger):</code></p>
+<p>Static method that converts an IP address in integer format to the standard dotted format.</p>
+
+<p><code>get_ip_range(self):</code></p>
+<p>Returns the range of possible IP addresses within the network of the current IP address.</p>
+
+<p><code>is_valid_ip(ipAddress):</code></p>
+<p>Static method that validates a given IP address and returns True if it's valid, False otherwise.</p>
+
+<p><code>test_tcp(self, ip):</code></p>
+<p>Tests TCP connections on several ports for the given IP address and writes the result to a CSV file.</p>
+
+<p><code>ping_ip(self, ip):</code></p>
+<p>Pings the given IP address and attempts the TCP connections in the TCP list in the Network class. Results are recorded in a CSV file.</p>
+
+<p><code>ping_network(self):</code></p>
+<p>Pings all the IP addresses within the network of the current IP address.</p>
+
+<p><code>scan_port(self, ip, port):</code></p>
+<p>This function will test a connection to a target IP. Currently only configured for TCP connections. This will return a status 0 if successful.</p>
+
+<p><code>write_to_database(self):</code></p>
+<p>Writes the contents of the ping and TCP attempts to a database.</p>
+
+<p>Example use:</p>
+
+<pre>
+Create a database connection object. This will be the database that the contents of the CSV file will write to when pinging and testing TCP connections.
+database1 = DatabaseConnection(username, password, host, database)
+
+Create a Network object. This accepts an IP with CIDR and the second parameter is the name of the CSV file you want to write to (it does not need to exist). The third parameter is the DatabaseConnection object you made previously.
+network1 = Network("196.168.1.1/24", "example.csv", database1)
+
+This will ping the given IP address and automatically write the results to the CSV file.
+network1.ping_ip(ipAddress)
+
+This will go ahead and write the contents of the CSV file to the database.
+network1.write_to_database()
+</pre>
+
         </div>
         <img id="flowchart" src="/assets/images/data_automation_flow_chart.pdf" alt="training technique">
         <button class="flowchart_button">Make bigger</button>
@@ -166,6 +146,7 @@
             <p>During this internship I learned a great deal of software development. I gathered requirements from my boss. Designed a high level solution, implemented, tested and maintained the software. This was a great experience and was the first time that I developed a piece of software for a company.This piece of software is still running, validating and transferring millions+ of telemetry points to various databases.</p>
         </div>
     </section>
+    
 </main>
 <script src="../assets/js/crc.js"></script>
 </body>

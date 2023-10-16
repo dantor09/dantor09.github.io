@@ -190,3 +190,39 @@ section {
         width: 15%;
     }
 }
+code, pre {
+    background-color: #1e1e1e;
+    color: #4A90E2;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    font-size: 0.95em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+code {
+    display: block;
+    border: none;
+    font-family: 'Courier New', monospace;
+}
+.explanation > p {
+    margin: 15px 0;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+pre {
+    font-family: 'Courier New', monospace;
+    border: none;
+}
+pre::before {
+    content: "user@terminal:~$";
+    display: block;
+    margin-bottom: 8px;
+    color: #ff6347;
+}
