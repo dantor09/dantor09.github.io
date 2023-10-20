@@ -122,19 +122,18 @@
 
 <p>Example use:</p>
 
-<pre>
-Create a database connection object. This will be the database that the contents of the CSV file will write to when pinging and testing TCP connections.
-database1 = DatabaseConnection(username, password, host, database)
 
-Create a Network object. This accepts an IP with CIDR and the second parameter is the name of the CSV file you want to write to (it does not need to exist). The third parameter is the DatabaseConnection object you made previously.
-network1 = Network("196.168.1.1/24", "example.csv", database1)
+<p>Create a database connection object. This will be the database that the contents of the CSV file will write to when pinging and testing TCP connections.</p>
+<pre>database1 = DatabaseConnection(username, password, host, database)</pre>
 
-This will ping the given IP address and automatically write the results to the CSV file.
-network1.ping_ip(ipAddress)
+<p>Create a Network object. This accepts an IP with CIDR and the second parameter is the name of the CSV file you want to write to (it does not need to exist). The third parameter is the DatabaseConnection object you made previously.</p>
+<pre>network1 = Network("196.168.1.1/24", "example.csv", database1)</pre>
 
-This will go ahead and write the contents of the CSV file to the database.
-network1.write_to_database()
-</pre>
+<p>This will ping the given IP address and automatically write the results to the CSV file.</p>
+<pre>network1.ping_ip(ipAddress)</pre>
+
+<p>This will go ahead and write the contents of the CSV file to the database.</p>
+<pre>network1.write_to_database()</pre>
 
     </div>
         

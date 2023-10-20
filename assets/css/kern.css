@@ -220,9 +220,9 @@ pre {
     font-family: 'Courier New', monospace;
     border: none;
 }
-pre::before {
+/*pre::before {
     content: "user@terminal:~$";
     display: block;
     margin-bottom: 8px;
     color: #ff6347;
-}
+}*/
