@@ -264,6 +264,11 @@ header > p {
     margin: 0 auto;
 }
 
+.text-block {
+    box-shadow: var(--bs);
+    padding: 1em;
+    border-radius: 10px;
+}
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -620,6 +625,9 @@ form .submit {
     .form-control {
         width: 100%;
     }
+    .text-block {
+        margin: 1em auto;
+    }
     .project {
         display: flex;
         flex-flow: column nowrap;
@@ -663,6 +671,7 @@ form .submit {
     form > * {
         margin: 1em auto;
     }
+    
 }
 
 
