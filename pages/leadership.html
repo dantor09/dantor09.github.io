@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny's Leadership Portfolio</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/leadership.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <li><a href="../index.html"><b>Home</b></a></li>
+        </nav>
+    </header>
+    
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Leadership Roles<strong>Software Engineering Club President</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Highlighting Leadership and Teamwork
+        </p>
+        <div class="project_summary_container">
+            <div>
+                <img src="path-to-coding-cup-image.jpg" alt="Coding Cup">
+                <h3>Coding Cup Organizer</h3>
+            </div>
+            <div>
+                <img src="path-to-resume-workshop-image.jpg" alt="Resume Workshop">
+                <h3>Resume Workshop Host</h3>
+            </div>
+            <div>
+                <img src="path-to-arduino-project-image.jpg" alt="Arduino Project">
+                <h3>Arduino Project Lead</h3>
+            </div>   
+        </div>
+    </section> 
+<main>
+    <section>
+        <div>
+            <h2>Leadership – Coding Cup</h2>
+            <p>Organized a coding challenge with participation from 25 local high school and 10 college students. The event, sponsored by Avadine with $200, awarded winners with $150 in cash prizes each and promoted computer science at CSU Bakersfield.</p>
+        </div>      
+    </section>
+
+    <section>
+        <div>
+            <h2>Leadership – Resume Workshop</h2>
+            <p>Invited 3 CSU Bakersfield Alumni to review and improve student resumes. Successfully provided professional insights to 13 students, enhancing their career prospects.</p>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Leadership – Arduino Project</h2>
+            <p>Guided a team of 8 students to create an Automated Collision Avoidance Vehicle, integrating robotics, sensors, and Arduino software. Facilitated practical experience in hardware-software communication for team members.</p>
+            <!-- Arduino code block starts here -->
+            <div class="arduino-code-container">
+                <pre><code class="vscode-style">
+    const int F_R = 5; //Confirmed
+    const int F_L = 6; //Confirmed
+    const int B_L = 3; //Confirmed
+    const int B_R = 9; //Confirmed
+    const int led1 = 13;
+    const int led2 = 10;
+    const int led3 = 2;
+    const int led4 = 9;
+    
+    // For providing logic to L298 IC to choose the direction of the DC motor
+    float duration;
+    float distance;
+    float distance1;
+    // Triggers UltraSonic Sensor
+    #define trigPin 12
+    // Triggers echoPin to listen
+    #define echoPin 11
+    
+    void setup() {
+        pinMode(trigPin, OUTPUT);
+        pinMode(echoPin, INPUT);
+        pinMode(led1, OUTPUT);
+        pinMode(led2, OUTPUT);
+        pinMode(led3, OUTPUT);
+        pinMode(led4, OUTPUT);
+        pinMode(F_L, OUTPUT);
+        pinMode(F_R, OUTPUT);
+        pinMode(B_L, OUTPUT);
+        pinMode(B_R, OUTPUT);
+        Serial.begin(9600);
+    }
+    
+    void loop() {
+        impulse();
+        distance = calc_distance();
+        print_distance();
+        digitalWrite(B_R, LOW);
+        digitalWrite(B_R, LOW);
+        delay(1000);
+    
+        analogWrite(B_R, 0);
+        delay(5000);
+    
+        while (distance >= 25) {
+            digitalWrite(led1, LOW);
+            digitalWrite(led2, LOW);
+            digitalWrite(led3, LOW);
+            digitalWrite(led4, LOW);
+    
+            Serial.print("Starting ...");
+            move_forward();
+            impulse();
+            distance = calc_distance();
+            print_distance();
+        }
+        back_up();
+        spin_counter();
+    }
+    
+    void back_up()
+    {
+        digitalWrite(led1, HIGH);
+        digitalWrite(led2,HIGH);
+        digitalWrite(led3,HIGH);
+        digitalWrite(led4,HIGH);
+        digitalWrite(F_R,LOW);
+        digitalWrite(F_L,LOW);
+        digitalWrite(B_R,LOW);
+        digitalWrite(B_R,LOW);
+        digitalWrite(B_R,HIGH);
+        digitalWrite(B_L,HIGH);
+        
+        delay(500);
+    }
+    void move_forward()
+    {
+        digitalWrite(B_L,LOW);
+        digitalWrite(F_L,HIGH);
+        digitalWrite(F_R,HIGH);
+      
+    }
+    
+    void spin_counter()
+    {
+        digitalWrite(F_R,LOW);
+        digitalWrite(F_L,LOW);
+        digitalWrite(B_R,LOW);
+        digitalWrite(B_R,LOW);
+        digitalWrite(F_R,HIGH);
+        digitalWrite(B_L,HIGH);
+        delay(1000);
+    }
+    void print_distance()
+    {
+      Serial.print("Distance ="); //print prints on monitor section as one line
+      Serial.println(distance);  //println prints on monitor section as one line\n
+      
+    }
+    
+    float calc_distance()
+    {
+       duration = pulseIn(echoPin, HIGH); //Time it took wave to bounce back to Ultrasonic sensor
+      distance = (duration/2) * 0.0343; //distance = Time * Velocity
+      return distance;
+    }
+    void impulse()
+    {
+        digitalWrite(trigPin, LOW);
+        delayMicroseconds(2);
+        digitalWrite(trigPin, HIGH);
+        delayMicroseconds(10);
+        digitalWrite(trigPin, LOW);
+      
+    }
+                </code></pre>
+            </div>
+            <!-- Arduino code block ends here -->
+    <video width="400" height="250" controls>
+        <source src="../assets/videos/arduino_no_sound.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+              
+        </div>
+    </section>
+</main>
+<script src="../assets/js/jaco.js"></script>
+</body>
+</html>
