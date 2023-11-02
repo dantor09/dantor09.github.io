@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+/*Custom Properties*/
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif; 
+    --ff-secondary: 'Source Code Pro', monospace; 
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light:#fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h2-3: 2rem ;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,25),
+          0.125em 0.125em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 5.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h2-3: 2rem ;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+/*General styles*/
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+main {  
+    max-width: 55%;
+    margin: 0 auto;
+}
+strong {
+    font-weight: var(--fw-bold);
+    font-size: 1.5em;
+}
+
+/*Typography*/
+
+h1,h2,h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: --var(--fs-h1);}
+h2 { font-size: --var(--fs-h2);}
+h3 { font-size: --var(--fs-h3);}
+
+p {
+    margin-bottom: 5px;
+}
+img {
+    display: flex;
+    margin: 25px auto;
+    width: 50%;
+}
+video {
+    display: flex;
+    margin: 25px auto;
+    width: 50%;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 1.5em;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.project_summary_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 85%;
+}
+.project_summary_container > div > img {
+    width: 40%;
+}
+#flowchart {
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5px;
+}
+li {
+    list-style: none;
+}
+header {
+    background-color:#16e0bd;
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    align-items: center;
+    padding: 5px;
+}
+.nav-menu > li > a {
+    color: black;
+    padding: 10px;
+    font-size: 1.6em;
+}
+.contact-card {
+    font-weight: bold;
+    position: relative;
+    top: -8px;
+}
+.intro {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.section__title {
+    margin-bottom: .25em;
+}
+.section__title-intro {
+    font-weight: var(--fw-reg);
+}
+.section__title > strong {
+    display: block;
+}
+
+section {
+    padding: 3em 2em;
+}
+
+.intro__img {
+
+    width: 20%;
+}
+.ionicon{
+    height: 90px;
+    width: 90px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 10px 30px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40%;
+    margin-top: 0px;
+}
+@media (max-width: 1000px) {
+        main {
+            max-width: 100%;
+        }
+}
+@media (max-width: 700px) {
+    .project_summary_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width:100%;
+    }
+    .project_summary_container > div > img {
+        width: 15%;
+    }
+}
+.arduino-code-container pre {
+    background-color: #242121;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.arduino-code-container code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9em;
+    color: white;
+}
