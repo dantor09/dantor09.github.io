@@ -451,7 +451,7 @@ nav a:hover {
 .company__button {
     margin-left: 20%;
 }
-.my-research {
+.my-research, .leadership {
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -496,7 +496,8 @@ nav a:hover {
 .research-button,
 .company__button,
 .network-scanner-github__button,
-.data-automation-documentation__button {
+.data-automation-documentation__button,
+.leadership_button {
     background-color: #333;
     padding: 1em 1em;
     color: white;
